@@ -16,9 +16,9 @@ import {
 
 import { Input } from '../ui/input';    
 import { Button } from '../ui/button';  
-import { useState } from 'react';
+import { use, useState } from 'react';
 import axios from 'axios';
-
+import {useRouter} from "next/navigation"
 
 const formSchema = z.object({
     name: z.string().min(1)
@@ -33,7 +33,7 @@ export const StoreModal=()=>
 {
 
     const storeModal = useStoreModal();
-
+    const router = useRouter();
     const[loading, setLoading] = useState(false);   
 
     const form  = useForm<z.infer<typeof formSchema>>({
@@ -51,6 +51,10 @@ export const StoreModal=()=>
             toast.success("Store created successfully",{
                 position: toast.POSITION.TOP_LEFT
             })
+            // router.push(`/${response.data.id}`)           
+            window.location.assign(`/${response.data.id}`) 
+            // You can try window.location.assign(`/${response.data.id}`) 
+            // if router.push doesn't work
         }
         catch(err)
         {

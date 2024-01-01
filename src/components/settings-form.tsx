@@ -17,6 +17,7 @@ import axios from "axios";
 import { useParams,useRouter } from "next/navigation";
 import { AlertModal } from "./modals/alert-modal";
 import { ApiAlert } from "./ui/api-alert";
+import { useOrigin } from "../../hooks/use-origin";
 interface SettingsFormProps {
     initialData:Store
 }
@@ -31,6 +32,7 @@ export const SettingsForm:React.FC<SettingsFormProps> = ({initialData})=>{
 
     const params  = useParams();
     const router = useRouter();
+    const origin = useOrigin();
     const [open,Setopen]  = useState(false);
     const [loading,Setloading]  = useState(false);
 

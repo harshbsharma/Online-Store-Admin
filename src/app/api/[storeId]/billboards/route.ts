@@ -12,7 +12,7 @@ export async function POST(req: Request,
     const storeId = params.storeId;
     if(!userId) return new NextResponse("Unauthenticated", {status: 401}); 
 
-    console.log("PARAMS HERE===> ",params);
+    console.log("POST PARAMS HERE===> ",params);
     if(!label) return new NextResponse("Lable is required", {status: 401}); 
     
     if(!imageUrl) return new NextResponse("Image URL is required", {status: 401}); 
@@ -45,15 +45,17 @@ export async function POST(req: Request,
 }
 
 
-export async function GET(req: Request, res: Response , {params}:{params:{storeId:string}}) {
+export async function GET(req: Request, {params}:{params:{storeId:string}}) {
     try{
       
+      const storeId = params.storeId; 
+      console.log("GET PARAMS HERE===> ",params);
       if(!params.storeId) return new NextResponse("Store ID is required", {status: 401}); 
   
-     
+      
       const billboard = await prismadb.billboard.findMany({
           where:{
-              storeId:params.storeId
+              storeId:storeId
           }
       
       })

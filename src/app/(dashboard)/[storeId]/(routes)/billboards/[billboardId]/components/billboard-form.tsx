@@ -64,8 +64,8 @@ export const BillBoardForm:React.FC<BillboardFormProps> = ({initialData})=>{
             else{
                 const response = await axios.post(`/api/${params.storeId}/billboards`,data)
             }
-            router.refresh();
             router.push(`/${params.storeId}/billboards`)
+            router.refresh();
             toast.success(toastmessage)
         }
         catch(err)
@@ -81,8 +81,8 @@ export const BillBoardForm:React.FC<BillboardFormProps> = ({initialData})=>{
         try{
             Setloading(true)
             await axios.delete(`/api/${params.storeId}/billboards/${params.billboardId}`)
+            router.push(`/${params.storeId}/billboards`)
             router.refresh()
-            router.push('/')
             toast.success("Billboard deleted successfully")
         }
         catch(err)

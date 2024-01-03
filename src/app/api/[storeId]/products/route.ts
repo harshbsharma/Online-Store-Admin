@@ -99,7 +99,7 @@ export async function GET(req: Request, {params}:{params:{storeId:string}}) {
       return new NextResponse(JSON.stringify(products), {status: 200});
     }
     catch(err){   
-      console.log("BILLBOARD_GET ==> ",err)
+      console.log("PRODUCT_GET ==> ",err)
       return new NextResponse("Internal error", {status: 500});
     }
   }

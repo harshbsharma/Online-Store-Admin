@@ -10,7 +10,7 @@ export async function GET(
        
         if(!params.colorId) return new NextResponse("Color Id is Reqiured", {status: 401}); 
     
-        const color  = await prismadb.color.deleteMany({
+        const color  = await prismadb.color.findUnique({
             where:{
                 id:params.colorId
             }
@@ -50,7 +50,7 @@ export async function PATCH(
 
         if(!storebyuser) return new NextResponse("Unauthorized", {status: 401});
     
-        const color  = await prismadb.color.updateMany({
+        const color  = await prismadb.color.update({
             where:{
                 id:params.colorId
             },
@@ -92,7 +92,7 @@ export async function DELETE(
         if(!storebyuser) return new NextResponse("Unauthorized", {status: 401});
 
 
-        const color  = await prismadb.color.deleteMany({
+        const color  = await prismadb.color.delete({
             where:{
                 id:params.colorId
             }

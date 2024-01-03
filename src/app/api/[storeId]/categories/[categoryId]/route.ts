@@ -10,9 +10,12 @@ export async function GET(
        
         if(!params.categoryId) return new NextResponse("Category Id is Reqiured", {status: 401}); 
     
-        const category  = await prismadb.category.deleteMany({
+        const category  = await prismadb.category.findUnique({
             where:{
                 id:params.categoryId
+            },
+            include: {
+                billboard: true
             }
         })
         return new NextResponse(JSON.stringify(category), {status: 200});
@@ -50,7 +53,7 @@ export async function PATCH(
 
         if(!storebyuser) return new NextResponse("Unauthorized", {status: 401});
     
-        const category  = await prismadb.category.updateMany({
+        const category  = await prismadb.category.update({
             where:{
                 id:params.categoryId
             },
@@ -92,7 +95,7 @@ export async function DELETE(
         if(!storebyuser) return new NextResponse("Unauthorized", {status: 401});
 
 
-        const category  = await prismadb.category.deleteMany({
+        const category  = await prismadb.category.delete({
             where:{
                 id:params.categoryId
             }

@@ -10,7 +10,7 @@ export async function GET(
        
         if(!params.sizeId) return new NextResponse("Size Id is Reqiured", {status: 401}); 
     
-        const size  = await prismadb.size.deleteMany({
+        const size  = await prismadb.size.findUnique({
             where:{
                 id:params.sizeId
             }
@@ -50,7 +50,7 @@ export async function PATCH(
 
         if(!storebyuser) return new NextResponse("Unauthorized", {status: 401});
     
-        const size  = await prismadb.size.updateMany({
+        const size  = await prismadb.size.update({
             where:{
                 id:params.sizeId
             },
@@ -92,7 +92,7 @@ export async function DELETE(
         if(!storebyuser) return new NextResponse("Unauthorized", {status: 401});
 
 
-        const size  = await prismadb.size.deleteMany({
+        const size  = await prismadb.size.delete({
             where:{
                 id:params.sizeId
             }

@@ -68,7 +68,7 @@ export const ProductForm:React.FC<ProductFormProps> = ({
         resolver: zodResolver(formSchema),
         defaultValues: initialData ? {
             ...initialData,
-            price:parseFloat(String(initialData?.price))
+            price:Number(String(initialData?.price))
         } : {
             name:'',
             images:[],
@@ -85,6 +85,7 @@ export const ProductForm:React.FC<ProductFormProps> = ({
     const onSubmit = async(data:ProductFromValues)=>{
         try{
             Setloading(true)
+            // console.log("Price Type=> ",typeof(data.price))
             if(initialData){
                 const response = await axios.patch(`/api/${params.storeId}/products/${params.productId}`,data)
             }

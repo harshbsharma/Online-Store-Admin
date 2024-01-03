@@ -10,7 +10,7 @@ export async function GET(
        
         if(!params.productId) return new NextResponse("Product Id is Required", {status: 401}); 
     
-        const product  = await prismadb.product.findFirst({
+        const product  = await prismadb.product.findUnique({
             where:{
                 id:params.productId
             },
@@ -125,7 +125,7 @@ export async function DELETE(
         if(!storebyuser) return new NextResponse("Unauthorized", {status: 401});
 
 
-        const product  = await prismadb.product.deleteMany({
+        const product  = await prismadb.product.delete({
             where:{
                 id:params.productId
             }

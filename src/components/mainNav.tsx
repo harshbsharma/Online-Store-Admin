@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
 import React, { use } from 'react'
 
-function mainNav({
+function MainNav({
     className,
     ...props
 }: React.HTMLAttributes<HTMLElement>)
@@ -75,4 +75,4 @@ function mainNav({
     )
 }
 
-export default mainNav
+export default MainNav

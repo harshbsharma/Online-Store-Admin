@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '../../providers/theme-provider'
 import { ClerkProvider } from '@clerk/nextjs'
 import { ModalProvider } from '../../providers/modal-provider'
 import { ToastContainer } from 'react-toastify'
@@ -23,9 +23,11 @@ export default function RootLayout({
     <ClerkProvider>
        <html lang="en">
       <body className={inter.className}>
-           <ToastContainer/>
-           <ModalProvider/>
-            {children}
+            <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+                <ToastContainer/>
+                <ModalProvider/>
+                  {children}
+            </ThemeProvider>
       </body>
     </html>
     </ClerkProvider>

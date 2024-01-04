@@ -13,7 +13,7 @@ const OrdersPage = async({
             storeId:params.storeId
         },
         include:{
-           ordertItems:{
+           orderItems:{
             include:{
                 product:true
             }
@@ -24,17 +24,21 @@ const OrdersPage = async({
         }
     })
 
+    console.log("This is order Call ===> ",orders)
+
     const formattedOrders : OrderColumn[] = orders.map((item)=>({
         id:item.id,
         phone:item.phone,
         address:item.address,
-        products:item.ordertItems.map((item)=> item.product.name).join(", "),
-        totalPrice:formatter.format(item.ordertItems.reduce((total,item)=>{
+        products:item.orderItems.map((item)=> item.product.name).join(", "),
+        totalPrice:formatter.format(item.orderItems.reduce((total,item)=>{
             return total+Number(item.product.price)
         },0)),
         isPaid:item.isPaid,
         createdAt:item.createdAt.toDateString()
     })) 
+
+    console.log("This is Formatted order Call ===> ",formattedOrders)
 
     return (
         <div className="flex-col">

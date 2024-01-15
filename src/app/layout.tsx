@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 const inter = Inter({ subsets: ['latin'] })
 
 
-const url = "https://cozycart.vercel.app/"
+const url = "https://cozycart.vercel.app"
 const title=  'Cozy Cart Store Admin'
 const description = 'A Fully Featured Admin Dashboard with CMS and Inventroy Management'
 
@@ -50,11 +50,9 @@ export const metadata: Metadata = {
     creator: '@0xharsh_sharma',
     images: '/src/assets/logo.png',
    },
-  // icons: {  
-  //   icon: '/favicon.ico',
-  //   shortcut: '/favicon-16x16.png',
-  //   apple: '/apple-touch-icon.png',
-  // },
+  icons: {  
+    icon: '/logo.ico',
+  },
 }
 
 export default function RootLayout({

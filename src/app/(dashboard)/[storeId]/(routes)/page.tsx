@@ -21,7 +21,7 @@ const DashboardPage:React.FC<DashboardPageProps>= async({params})=>{
     
 
 
-    const totalRevenue:number=await getTotalRevenue(params.storeId)    
+    const totalRevenue=await getTotalRevenue(params.storeId)    
     const totalSales=await getSalesCount(params.storeId)
     const productsInStock=await getStockCount(params.storeId)
 

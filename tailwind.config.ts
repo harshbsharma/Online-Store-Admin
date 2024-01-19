@@ -18,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      linearGradientColors: {
+        'bluegradient': ['rgb(80, 70, 229)', 'rgb(43, 49, 203)'],
+      },
+      borderColor: {
+        'custom-purple': 'rgb(93, 79, 240)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -67,14 +73,19 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        textSlide: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwindcss-gradients")],
 } satisfies Config
 
 export default config

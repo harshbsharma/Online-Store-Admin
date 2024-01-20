@@ -46,7 +46,7 @@ const Review = () => {
                 </div>
             </div>
             <p className="mt-8">Using Cozy Cart has been a game-changer for our business. The platform&apos;s efficient inventory management system has significantly reduced our workload. 
-            Plus, the smooth and secure transaction process has undoubtedly enhanced our customers' shopping experience
+            Plus, the smooth and secure transaction process has undoubtedly enhanced our customer&apos;s shopping experience
             </p>
         </div>
 
@@ -76,7 +76,7 @@ const Review = () => {
                     <p className="text-sm text-gray-500 dark:text-gray-300">Developer</p>
                 </div>
             </div>
-            <p className="mt-8">The integration with our frontend systems has been seamless, and the platform's secure API ensures smooth transactions, making it an indispensable tool for our e-commerce operations and has simplified our day-to-day operations. Cozy Cart is a must-have for any online retailer.
+            <p className="mt-8">The integration with our frontend systems has been seamless, and the platform&apos;s secure API ensures smooth transactions, making it an indispensable tool for our e-commerce operations and has simplified our day-to-day operations. Cozy Cart is a must-have for any online retailer.
             </p>
         </div>
 

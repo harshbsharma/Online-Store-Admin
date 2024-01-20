@@ -72,7 +72,7 @@ const MobileNav = ({className}:React.HTMLAttributes<HTMLElement>) => {
                                 <DropdownMenuItem>Team</DropdownMenuItem>
                                 <DropdownMenuItem>Subscription</DropdownMenuItem> */}
                                 {routes.map((route)=>(
-                                        <DropdownMenuItem><Link
+                                        <DropdownMenuItem key={route.href}><Link
                                         key={route.href}
                                         href={route.href}  
                                         className={cn(

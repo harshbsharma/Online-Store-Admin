@@ -15,6 +15,9 @@ import {
 import { Form as UIForm } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useToast } from "@/components/ui/use-toast"
+import { cn } from "@/lib/utils"
+
 
 const formSchema = z.object({
   fullname: z.string().min(0).max(50),
@@ -23,7 +26,10 @@ const formSchema = z.object({
 })
 
 
-const ContactForm = () => {    
+const ContactForm = () => {
+    const {toast}  = useToast() 
+
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -37,7 +43,15 @@ const ContactForm = () => {
     function onSubmit(values: z.infer<typeof formSchema>) {
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
-        console.log(values)
+        toast({
+          className: cn(
+            'top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4'
+          ),
+          title: "Thanks for your contacting!",
+          description: "We'll get back to you soon",
+          duration: 500,
+        })
+        form.reset();
     }
     // className="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 md:rounded-xl md:px-8 sm:rounded-xl"
     return (

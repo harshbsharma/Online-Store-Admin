@@ -6,6 +6,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import { ModalProvider } from '../../providers/modal-provider'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -69,6 +70,7 @@ export default function RootLayout({
             <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
                 <ToastContainer/>
                 <ModalProvider/>
+                <Toaster/>
                   {children}
             </ThemeProvider>
       </body>

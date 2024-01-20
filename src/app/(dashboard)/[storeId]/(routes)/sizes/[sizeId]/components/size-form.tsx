@@ -126,7 +126,7 @@ export const SizeForm:React.FC<SizeFormProps> = ({initialData})=>{
                 <form onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-8 w-full" 
                 >
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-3 gap-8 max-sm:flex flex-col">
                     <FormField
                         control={form.control}
                         name="name"

@@ -146,7 +146,7 @@ export const BillBoardForm:React.FC<BillboardFormProps> = ({initialData})=>{
                         )}  
                         />
 
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-3 gap-8 max-sm:flex flex-col">
                     <FormField
                         control={form.control}
                         name="label"

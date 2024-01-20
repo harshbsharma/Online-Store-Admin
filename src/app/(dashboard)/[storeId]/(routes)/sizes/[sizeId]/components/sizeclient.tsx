@@ -20,7 +20,7 @@ export const SizeClient:React.FC<SizeClientProps> =({data})=> {
 
     return(
         <>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between max-sm:flex-col gap-2 max-sm:justify-center">
                 <Heading title={`Sizes (${data.length})`}
                 description="Manage Sizes for your store"/>
 

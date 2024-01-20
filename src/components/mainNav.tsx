@@ -55,8 +55,9 @@ function MainNav({
     },]
 
     return (
+        <div>
         <nav 
-        className={cn("flex item-center space-x-4 lg:space-x-6" , className)}
+        className={cn("hidden md:flex item-center space-x-4 lg:space-x-6" , className)}
         >
         {routes.map((route)=>(
             <Link
@@ -72,6 +73,9 @@ function MainNav({
             </Link>
         ))}
         </nav>
+
+    
+        </div>
     )
 }
 

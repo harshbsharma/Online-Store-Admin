@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const url = "https://cozycart.vercel.app"
 const title=  'Cozy Cart Store Admin'
-const description = 'A Fully Featured Admin Dashboard with CMS and Inventroy Management'
+const description = 'A Fully Featured Admin Dashboard with CMS and Inventroy Management for your Ecommerce Store  '
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -45,13 +45,15 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
+    card: 'summary_large_image',
     title,
     description,
     creator: '@0xharsh_sharma',
-    images: '/src/assets/logo.png',
+    images: '/images/logo.png',
    },
   icons: {  
-    icon: '/logo.ico',
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
   },
 }
 

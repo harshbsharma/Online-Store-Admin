@@ -34,11 +34,11 @@ const WhyUs = () => {
                 </span>
                 <h2
                     className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                    Build a Website That Your Customers Love
+                    Easiest Inventory Management
                 </h2>
                 <p
                     className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-                    Our templates allow for maximum customization. No technical skills required – our intuitive design tools
+                    Our platfrom allow for maximum customization. No technical skills required – our intuitive design tools
                     let
                     you get the job done easily.
                 </p>
@@ -62,9 +62,8 @@ const WhyUs = () => {
                         </svg>
                     </div>
                     <h3 className="mt-6 text-gray-400">Customizable</h3>
-                    <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Tailor your landing page&apos;s
-                        look
-                        and feel, from the color scheme to the font size, to the design of the page.
+                    <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">Tailor your store as per your
+                        needs. You can customize everything, from the color scheme to sizes and categories.
                     </p>
                 </motion.div>
 
@@ -81,9 +80,10 @@ const WhyUs = () => {
                             <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
                         </svg>
                     </div>
-                    <h3 className="mt-6 text-gray-400">Fast Performance</h3>
-                    <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">We build our templates for
-                        speed in mind, for super-fast load times so your customers never waver.
+                    <h3 className="mt-6 text-gray-400">Detail Analytics</h3>
+                    <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                        Our platform provides you with detailed analytics of your store. You can track your sales, orders and
+                        inventory.
                     </p>
                 </motion.div>
 
@@ -107,9 +107,7 @@ const WhyUs = () => {
                     </div>
                     <h3 className="mt-6 text-gray-400">Fully Featured</h3>
                     <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                        Everything you need to
-                        succeed
-                        and launch your landing page, right out of the box. No need to install anything else.
+                        Loaded with User Centric Features for a seamless experience. We have got you covered with everything.
                     </p>
                 </motion.div>
 

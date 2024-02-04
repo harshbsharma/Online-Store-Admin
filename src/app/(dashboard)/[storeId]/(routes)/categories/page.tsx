@@ -3,6 +3,7 @@ import prismadb from "@/lib/prismadb"
 
 import { CategoryColumn } from "./[categoryId]/components/columns"
 import { CategoryClient } from "./[categoryId]/components/categoryclient"
+import { Suspense } from "react"
 
 
 const CategoriesPage = async({

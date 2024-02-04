@@ -2,6 +2,7 @@ import { SettingsForm } from "@/components/settings-form";
 import prismadb from "@/lib/prismadb";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
+import { Suspense } from "react";
 
 interface SettingsPageProps{
     params:{

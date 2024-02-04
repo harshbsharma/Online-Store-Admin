@@ -66,15 +66,15 @@ export default function RootLayout({
   return (
     <ClerkProvider>
        <html lang="en">
-      <body className={inter.className}>
-            <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-                <ToastContainer/>
-                <ModalProvider/>
-                <Toaster/>
-                  {children}
-            </ThemeProvider>
-      </body>
-    </html>
+        <body className={inter.className}>
+              <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+                  <ToastContainer/>
+                  <ModalProvider/>
+                  <Toaster/>
+                    {children}
+              </ThemeProvider>
+        </body>
+     </html>
     </ClerkProvider>
    
   )

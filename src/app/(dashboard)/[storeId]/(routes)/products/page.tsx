@@ -1,6 +1,5 @@
 
 import prismadb from "@/lib/prismadb"
-import axios from "axios"
 import { ProductColumn } from "./[productId]/components/columns"
 import { formatter } from "@/lib/utils"
 import { ProductClient } from "./[productId]/components/productclient"

@@ -3,6 +3,8 @@ import Navbar from "@/components/navbar";
 import prismadb from "@/lib/prismadb";
 import { auth } from "@clerk/nextjs"
 import { redirect } from "next/navigation";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 export default async function Dashboard({
@@ -34,7 +36,10 @@ export default async function Dashboard({
     return( 
         <>
         <Navbar/>
+        <Suspense fallback={<Loading/>}>
+            
         {children}
+        </Suspense>
         </>
     )
 }

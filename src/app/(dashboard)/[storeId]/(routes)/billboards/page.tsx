@@ -2,6 +2,7 @@ import { BillboardClient } from "@/components/billboardclient"
 import prismadb from "@/lib/prismadb"
 import axios from "axios"
 import { BillboardColumn } from "./[billboardId]/components/columns"
+import { Suspense } from "react"
 
 const BillboardsPage = async({
     params

@@ -3,6 +3,7 @@ import prismadb from "@/lib/prismadb"
 import axios from "axios"
 import { OrderColumn } from "./components/columns"
 import { formatter } from "@/lib/utils"
+import { Suspense } from "react"
 
 const OrdersPage = async({
     params

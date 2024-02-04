@@ -2,6 +2,8 @@ import { ColorsClient } from "./[colorId]/components/colorclient"
 import prismadb from "@/lib/prismadb"
 import axios from "axios"
 import { ColorColumn } from "./[colorId]/components/columns"
+import { Suspense } from "react"
+import { SkeletonDemo } from "./[colorId]/components/Skeleton"
 
 const ColorsPage = async({
     params

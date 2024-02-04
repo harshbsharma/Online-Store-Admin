@@ -2,6 +2,7 @@ import { SizeClient } from "./[sizeId]/components/sizeclient"
 import prismadb from "@/lib/prismadb"
 import axios from "axios"
 import { SizeColumn } from "./[sizeId]/components/columns"
+import { Suspense } from "react"
 
 const SizesPage = async({
     params

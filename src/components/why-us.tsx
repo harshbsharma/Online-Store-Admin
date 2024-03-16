@@ -52,8 +52,8 @@ const WhyUs = () => {
                     <div className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border 
                         bg-gradient-to-r from-purple-700 via-purple-600 to-purple-900 border-purple-500">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-color-swatch" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none"
+                            strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
                             <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
@@ -74,8 +74,8 @@ const WhyUs = () => {
                     <div className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border 
                         bg-gradient-to-r from-purple-700 via-purple-600 to-purple-900 border-purple-500">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-bolt" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none"
+                            strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
                         </svg>
@@ -94,8 +94,8 @@ const WhyUs = () => {
                     <div className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border 
                     bg-gradient-to-r from-purple-700 via-purple-600 to-purple-900 border-purple-500">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-tools" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none"
+                            strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
                             <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>

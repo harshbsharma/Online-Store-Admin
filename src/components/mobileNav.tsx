@@ -60,10 +60,10 @@ const MobileNav = ({className}:React.HTMLAttributes<HTMLElement>) => {
     },]
   return (
     <div
-    className={cn("flex item-center space-x-4 lg:space-x-6 mr-3 " , className)}
+    className={cn("flex item-center space-x-4 lg:space-x-6 mr-3" , className)}
     >
         <DropdownMenu>
-                <DropdownMenuTrigger><Menu/></DropdownMenuTrigger>
+                <DropdownMenuTrigger ><Menu/></DropdownMenuTrigger>
                     <DropdownMenuContent>
                         <DropdownMenuLabel>Menu</DropdownMenuLabel>
                         <DropdownMenuSeparator />

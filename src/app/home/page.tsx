@@ -32,17 +32,7 @@ const HomePage = () => {
     } 
   return (
     <div className='pb-10'>
-        {/* <div className='mt-5 lg:hidden md:hidden border rounded-2xl mr-2 ml-2 pl-5  h-[50px] border-white flex gap-40 justify-evenly items-center overflow-hidden'>
-                <Image src={Logo} width={50} height={50} className='rounded-full' alt="logo"/>
-            <div className='flex item-center justify-center gap-2'>
-            <ThemeToggle/>
-            <Button onClick={handleclick}>
-                Sign In
-            </Button>
-            </div>
-        </div> */}
-        {/* <Navbar/> */}
-        
+      
         <div className='bg-[#111827] w-auto overflow-hidden flex items-center justify-between p-5 '>
             <div className='ml-5 max-sm:ml-1'>
                 <Link href="/home">

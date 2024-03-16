@@ -8,7 +8,6 @@ interface SettingsPageProps{
     params:{
         storeId:string
     }
-
 }
 
 const SettingPage:React.FC<SettingsPageProps>= async({params})=>{

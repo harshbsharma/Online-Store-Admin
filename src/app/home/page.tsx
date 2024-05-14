@@ -37,7 +37,7 @@ const HomePage = () => {
             <div className='ml-5 max-sm:ml-1'>
                 <Link href="/home">
                 
-                <p className={`${inter.className} text-white text-3xl sm:text-2xl`}>CozyCart</p>
+                <p className={`${inter.className} text-white text-3xl sm:text-2xl`}>CollabHub</p>
                 </Link>
             </div>
 

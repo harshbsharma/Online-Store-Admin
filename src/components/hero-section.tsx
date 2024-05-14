@@ -31,7 +31,7 @@ const Hero = () => {
             </h1>
 
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Cozy Cart is a versatile CMS and Inventory Management System designed to streamline business operations, 
+            CollabHub is a versatile CMS and Inventory Management System designed to streamline business operations, 
             from managing inventory to facilitating secure online transactions. It provides an 
             intuitive platform for businesses to efficiently organize, track, and sell their products or services
                 {/* <a target="_blank" className="hover:underline">Tailwind CSS</a> and based on the

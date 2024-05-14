@@ -8,10 +8,10 @@ const Footer = () => {
 <div className="text-center mt-10 ">
     <a href="#" className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
         <Image src="https://www.svgrepo.com/show/452178/cart.svg" className="h-12 sm:h-9" width={100} height={100} alt="Landwind Logo"/>
-		CozyCart
+		CollabHub
     </a>
 
-    <span className="block text-sm text-center text-gray-500 dark:text-gray-400">© 2023-2024 CozyCart™. All Rights Reserved.
+    <span className="block text-sm text-center text-gray-500 dark:text-gray-400">© 2023-2024 CollabHub™. All Rights Reserved.
 		Built with 
         <a href="https://nextjs.org"
 			className="text-purple-600 hover:underline dark:text-purple-500">&nbsp;Next.js</a> and 

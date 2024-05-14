@@ -29,7 +29,7 @@ const Review = () => {
                     <p className="text-sm text-gray-500 dark:text-gray-300">Bella Beauty</p>
                 </div>
             </div>
-            <p className="mt-8">Cozy Cart has revolutionized how we manage our online store. 
+            <p className="mt-8">CollabHub has revolutionized how we manage our online store. 
             The intuitive interface and robust inventory management make our daily operations a breeze.
              Our team loves the seamless transaction process, and our customers appreciate the user-friendly experience.
             </p>
@@ -45,7 +45,7 @@ const Review = () => {
                     <p className="text-sm text-gray-500 dark:text-gray-300">Head Marketing, HomyBee</p>
                 </div>
             </div>
-            <p className="mt-8">Using Cozy Cart has been a game-changer for our business. The platform&apos;s efficient inventory management system has significantly reduced our workload. 
+            <p className="mt-8">Using CollabHub has been a game-changer for our business. The platform&apos;s efficient inventory management system has significantly reduced our workload. 
             Plus, the smooth and secure transaction process has undoubtedly enhanced our customer&apos;s shopping experience
             </p>
         </div>
@@ -60,7 +60,7 @@ const Review = () => {
                     <p className="text-sm text-gray-500 dark:text-gray-300">Founder, BuyLocal</p>
                 </div>
             </div>
-            <p className="mt-8">Cozy Cart has added tremendous value to our online store.
+            <p className="mt-8">CollabHub has added tremendous value to our online store.
              The user-friendly interface, coupled with powerful inventory management, has allowed us to focus more on growing our business. 
             The secure and seamless transaction process has instilled trust among our customers.
             </p>
@@ -76,7 +76,7 @@ const Review = () => {
                     <p className="text-sm text-gray-500 dark:text-gray-300">Developer</p>
                 </div>
             </div>
-            <p className="mt-8">The integration with our frontend systems has been seamless, and the platform&apos;s secure API ensures smooth transactions, making it an indispensable tool for our e-commerce operations and has simplified our day-to-day operations. Cozy Cart is a must-have for any online retailer.
+            <p className="mt-8">The integration with our frontend systems has been seamless, and the platform&apos;s secure API ensures smooth transactions, making it an indispensable tool for our e-commerce operations and has simplified our day-to-day operations. CollabHub is a must-have for any online retailer.
             </p>
         </div>
 
@@ -90,7 +90,7 @@ const Review = () => {
                     <p className="text-sm text-gray-500 dark:text-gray-300">Manager</p>
                 </div>
             </div>
-            <p className="mt-8"> Cozy Cart has exceeded our expectations. The ease of use and robust features have streamlined our online store management. Our transactions are now more secure, and the overall experience for both our team and customers has been exceptional.
+            <p className="mt-8"> CollabHub has exceeded our expectations. The ease of use and robust features have streamlined our online store management. Our transactions are now more secure, and the overall experience for both our team and customers has been exceptional.
             </p>
         </div>
 
@@ -104,7 +104,7 @@ const Review = () => {
                         <p className="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
                 </div>
             </div>
-            <p className="mt-8">Cozy Cart seamlessly integrates with our e-commerce store, providing unparalleled control over our inventory. The smooth flow of data between our storefront and Cozy Cart ensures accurate product listings and efficient order fulfillment. One must try them for business growth.
+            <p className="mt-8">CollabHub seamlessly integrates with our e-commerce store, providing unparalleled control over our inventory. The smooth flow of data between our storefront and CollabHub ensures accurate product listings and efficient order fulfillment. One must try them for business growth.
             </p>
         </div>
 
